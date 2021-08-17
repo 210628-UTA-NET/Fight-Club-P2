@@ -44,7 +44,6 @@ namespace PillowFight.Api.Hubs
              */
             await Clients.Group("").ReceiveAction(characterAction, mapPosition, string.Empty, null);
         }
-
         public async Task SendActionOptions(int characterId, string action)
         {
             /*
@@ -144,11 +143,11 @@ namespace PillowFight.Api.Hubs
         /*
          * Not emitting receive event for now...
          */
-        public async Task SendUserInfo(int userId, IEnumerable<int> charactersIds)
+/*         public async Task SendUserInfo(int userId, IEnumerable<int> charactersIds)
         {
             Context.Items[userIdKey] = userId;
             await JoinLobby();
-        }
+        } */
 
         /*
          * Remove this after presentation.
