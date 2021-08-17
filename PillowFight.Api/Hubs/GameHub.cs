@@ -84,7 +84,7 @@ namespace PillowFight.Api.Hubs
                 }
                 else
                 {
-                    await Clients.Caller.ReceiveJoinRoomRequest(room, false);
+                    await Clients.Caller.ReceiveJoinRoomRequest(null, false);
                 }
 
                 // Remove player from lobby.
